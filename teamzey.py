@@ -3,6 +3,7 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 import json
 import re
 import urllib.request
+import os
 
 
 class Handler(SimpleHTTPRequestHandler):
@@ -49,6 +50,7 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-  server = HTTPServer(("127.0.0.1", 8080), Handler)
-  print("Serving on http://127.0.0.1:8080")
+  port = int(os.environ.get("PORT", 8080))
+  server = HTTPServer(("0.0.0.0", port), Handler)
+  print(f"Serving on port {port}")
   server.serve_forever()
