@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEAMZEY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="teamzey.css" />
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-messenger" viewBox="0 0 24 24">
+      <path
+        fill="currentColor"
+        d="M12 0C5.373 0 0 4.975 0 11.111c0 3.497 1.744 6.616 4.472 8.652V24l4.086-2.242c1.09.301 2.246.464 3.442.464 6.627 0 12-4.975 12-11.111C24 4.975 18.627 0 12 0zm1.191 14.963l-3.055-3.26-5.963 3.26L11.732 8l3.055 3.259 5.9-3.259-5.496 6.963z"
+      />
+    </symbol>
+    <symbol id="icon-discord" viewBox="0 0 24 24">
+      <path
+        fill="currentColor"
+        d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"
+      />
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <path
+        fill="currentColor"
+        d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm-.2 1.8A3.75 3.75 0 0 0 3.8 7.55v8.9a3.75 3.75 0 0 0 3.75 3.75h8.9a3.75 3.75 0 0 0 3.75-3.75v-8.9a3.75 3.75 0 0 0-3.75-3.75h-8.9zM12 7.7A4.3 4.3 0 1 1 7.7 12 4.3 4.3 0 0 1 12 7.7zm0 1.8A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zm4.7-3.15a1.05 1.05 0 1 1-1.05 1.05 1.05 1.05 0 0 1 1.05-1.05z"
+      />
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+      <path
+        fill="currentColor"
+        d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.7V5c-.8-.1-1.6-.2-2.4-.2-2.4 0-4 1.4-4 4.1V11H8v3h2.4v8h3.1z"
+      />
+    </symbol>
+  </svg>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="brand">
+        <span class="brand-dot"></span>
+        <span>TEAMZEY</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#pricing">Pricing</a>
+        <a href="#team">Our Team</a>
+        <a href="#rules">Rules</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="status-card">
+          <p class="eyebrow">CURRENT WORLD (OPEN)</p>
+          <h1>TEAMZEY</h1>
+          <button id="copyWorldButton" class="copy-btn" type="button">Copy World Name</button>
+          <p id="copyMessage" class="copy-message" aria-live="polite"></p>
+          <div class="gt-status-row" aria-live="polite">
+            <p id="gtServerStatus" class="status-pill"><span class="dot"></span>Checking server...</p>
+            <p id="gtPlayers" class="status-pill status-pill-secondary">Players online: --</p>
+          </div>
+          <p id="statusUpdated" class="updated">Updated just now</p>
+        </div>
+        <p class="hero-subtitle">Welcome to TEAMZEY - the #1 most trusted Growtopia team.</p>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+      <div class="container">
+        <h2>Prices</h2>
+        <p class="section-subtitle">Prices for joining TEAMZEY</p>
+        <div class="prices-grid">
+          <article class="price-card">
+            <h3>FULL HOST</h3>
+            <p class="amount">10000 <img class="dl-icon-img" src="diamond-lock-final copy.png" alt="Diamond Lock" /></p>
+            <p>FULL HOST U CAN SELL QQ HOSTS AND HOST IN LEFT REME!</p>
+          </article>
+          <article class="price-card">
+            <h3>QQ HOST</h3>
+            <p class="amount">3000 <img class="dl-icon-img" src="diamond-lock-final copy.png" alt="Diamond Lock" /></p>
+            <p>NORMAL QQ HOST NO DAILY TAX</p>
+          </article>
+          <article class="price-card">
+            <h3>REME HOST</h3>
+            <p class="amount">5000 <img class="dl-icon-img" src="diamond-lock-final copy.png" alt="Diamond Lock" /></p>
+            <p>REME HOST LEFT SIDE!</p>
+          </article>
+          <article class="price-card">
+            <h3>REME HOST</h3>
+            <p class="amount">10000 <img class="dl-icon-img" src="diamond-lock-final copy.png" alt="Diamond Lock" /></p>
+            <p>REME HOST RIGHT SIDE!</p>
+          </article>
+          <article class="price-card">
+            <h3>REME TAX</h3>
+            <p class="amount">550 <img class="dl-icon-img" src="diamond-lock-final copy.png" alt="Diamond Lock" /></p>
+            <p>REME 24H TAX</p>
+          </article>
+          <article class="price-card">
+            <h3>REME TAX</h3>
+            <p class="amount">500 <img class="dl-icon-img" src="diamond-lock-final copy.png" alt="Diamond Lock" /></p>
+            <p>REME 4H TAX</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="buy-access-section">
+      <div class="container">
+        <h2>Buy Access</h2>
+        <p class="section-subtitle">Tap a button — Messenger opens chat; Discord opens the app (add friend with the username shown).</p>
+        <div class="owners-grid">
+          <article class="owner-card">
+            <h3>Owner</h3>
+            <p class="owner-name">Khian</p>
+            <ul class="owner-taglines">
+              <li>Host available 🔸</li>
+              <li>Active host 🔹</li>
+            </ul>
+            <div class="owner-contact">
+              <a
+                class="owner-social owner-social--messenger"
+                href="https://m.me/nash.gt.900"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="owner-social-icon" aria-hidden="true">
+                  <svg class="owner-social-svg"><use href="#icon-messenger" /></svg>
+                </span>
+                <span class="owner-social-text">
+                  <span class="owner-social-title">Messenger</span>
+                  <span class="owner-social-sub">Open chat</span>
+                </span>
+              </a>
+              <a
+                class="owner-social owner-social--discord"
+                href="https://discord.com/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Opens Discord. Use Add Friend and search: wjakeperalta."
+              >
+                <span class="owner-social-icon" aria-hidden="true">
+                  <svg class="owner-social-svg"><use href="#icon-discord" /></svg>
+                </span>
+                <span class="owner-social-text">
+                  <span class="owner-social-title">Discord</span>
+                  <span class="owner-social-sub">wjakeperalta.</span>
+                </span>
+              </a>
+            </div>
+          </article>
+          <article class="owner-card">
+            <h3>Co Owner</h3>
+            <p class="owner-name">Jesse</p>
+            <ul class="owner-taglines">
+              <li>Fast response ⚡</li>
+              <li>Online now 🟢</li>
+            </ul>
+            <div class="owner-contact">
+              <a
+                class="owner-social owner-social--messenger"
+                href="https://m.me/jesse.hoster.2025"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="owner-social-icon" aria-hidden="true">
+                  <svg class="owner-social-svg"><use href="#icon-messenger" /></svg>
+                </span>
+                <span class="owner-social-text">
+                  <span class="owner-social-title">Messenger</span>
+                  <span class="owner-social-sub">Open chat</span>
+                </span>
+              </a>
+              <a
+                class="owner-social owner-social--discord"
+                href="https://discord.com/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Opens Discord. Use Add Friend and search: jessehoster"
+              >
+                <span class="owner-social-icon" aria-hidden="true">
+                  <svg class="owner-social-svg"><use href="#icon-discord" /></svg>
+                </span>
+                <span class="owner-social-text">
+                  <span class="owner-social-title">Discord</span>
+                  <span class="owner-social-sub">jessehoster</span>
+                </span>
+              </a>
+            </div>
+          </article>
+          <article class="owner-card">
+            <h3>Owner</h3>
+            <p class="owner-name">Darius</p>
+            <ul class="owner-taglines">
+              <li>Active host 🔹</li>
+              <li>Quick service</li>
+            </ul>
+            <div class="owner-contact">
+              <a
+                class="owner-social owner-social--messenger"
+                href="https://m.me/DariusRaaaa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="owner-social-icon" aria-hidden="true">
+                  <svg class="owner-social-svg"><use href="#icon-messenger" /></svg>
+                </span>
+                <span class="owner-social-text">
+                  <span class="owner-social-title">Messenger</span>
+                  <span class="owner-social-sub">Open chat</span>
+                </span>
+              </a>
+              <a
+                class="owner-social owner-social--discord"
+                href="https://discord.com/app"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Opens Discord. Use Add Friend and search: .oneway"
+              >
+                <span class="owner-social-icon" aria-hidden="true">
+                  <svg class="owner-social-svg"><use href="#icon-discord" /></svg>
+                </span>
+                <span class="owner-social-text">
+                  <span class="owner-social-title">Discord</span>
+                  <span class="owner-social-sub">.oneway</span>
+                </span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="rules" class="rules-section">
+      <div class="container">
+        <h2>TEAMZEY Rules</h2>
+        <p class="section-subtitle">Penalty costs from 1 BGL to 20 BGL</p>
+        <div class="rules-grid">
+          <article class="rules-card">
+            <h3>Rules for Hosters</h3>
+            <ol>
+              <li>Always record while hosting to prevent issues.</li>
+              <li>Every game must be hosted with 10% tax.</li>
+              <li>Drop tax in the box after each game.</li>
+              <li>No griefing or breaking worlds without rebuilding.</li>
+              <li>No banning glitchers without reason.</li>
+              <li>No tricking players.</li>
+              <li>No ban-all, pull-all, or kick-all without reason.</li>
+              <li>No changing signs or doors to advertise or steal tax.</li>
+              <li>No stealing players.</li>
+              <li>Ban all spammers from other casino teams.</li>
+              <li>No nickname changes when you already have access.</li>
+              <li>No sharing logins.</li>
+              <li>Record for 8 minutes before taking another room.</li>
+              <li>No free banning without reason.</li>
+              <li>No fighting, kicking, or insulting other hosters.</li>
+              <li>No free or auto pulls.</li>
+              <li>No stealing tax.</li>
+            </ol>
+          </article>
+          <article class="rules-card">
+            <h3>Owners / Full Hosters / Helpers / Hosters</h3>
+            <ol>
+              <li>Post our casino link or banner in 5 Facebook groups daily.</li>
+              <li>Bring 3 Gmail accounts every week.</li>
+              <li>No selling host below minimum deposit or on debt.</li>
+              <li>Only owners can sell REME or FULL Host.</li>
+            </ol>
+          </article>
+          <article class="rules-card">
+            <h3>Extra Information</h3>
+            <ul>
+              <li>If you bought Host or Fullhost from owner, no 50% deposit refund on leaving.</li>
+              <li>If you bought Host from Fullhost, you get 50% deposit refund on leaving.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section id="contact" class="social-links-section">
+    <div class="container social-links-wrap">
+      <h2>Social Links</h2>
+      <p class="section-subtitle">Join and follow TEAMZEY here</p>
+      <div class="social-links-grid">
+        <a class="social-link social-link-discord" href="https://discord.gg/teamzey" target="_blank" rel="noopener noreferrer">
+          <span class="social-link-icon" aria-hidden="true"><svg class="social-link-svg"><use href="#icon-discord" /></svg></span>
+          <span class="social-link-text">discord.gg/teamzey</span>
+        </a>
+        <a class="social-link social-link-instagram" href="https://www.instagram.com/teamzeygrowtopia" target="_blank" rel="noopener noreferrer">
+          <span class="social-link-icon" aria-hidden="true"><svg class="social-link-svg"><use href="#icon-instagram" /></svg></span>
+          <span class="social-link-text">@teamzeygrowtopia</span>
+        </a>
+        <a class="social-link social-link-facebook" href="https://www.facebook.com/search/top?q=Growtopia%20Casino%20%23TeamZey" target="_blank" rel="noopener noreferrer">
+          <span class="social-link-icon" aria-hidden="true"><svg class="social-link-svg"><use href="#icon-facebook" /></svg></span>
+          <span class="social-link-text">Growtopia Casino #TeamZey</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="team" class="site-footer">
+    <div class="container">
+      <p>TEAMZEY</p>
+      <p>Most trusted Growtopia team.</p>
+    </div>
+  </footer>
+
+  <script src="teamzey.js"></script>
+</body>
+</html>
